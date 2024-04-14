@@ -1,0 +1,21 @@
+qemu-system-i386 -hda /tmp/3W5SIZ1x4d.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading............
+Kernel command line: -q run alarm-multiple
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  392,806,400 loops/s.
+hda: 1,008 sectors (504 kB), model "QM00001", serial "QEMU HARDDISK"
+hda1: 195 sectors (97 kB), Pintos OS kernel (20)
+Kernel PANIC at ../../filesys/filesys.c:22 in filesys_init(): No file system device found, can't initialize file system.
+Call stack: 0xc0027f6d.
+The `backtrace' program can make call stacks useful.
+Read "Backtraces" in the "Debugging Tools" chapter
+of the Pintos documentation for more information.
+Timer: 75 ticks
+Thread: 0 idle ticks, 75 kernel ticks, 0 user ticks
+Console: 677 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...
